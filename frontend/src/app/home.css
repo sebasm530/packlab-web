@@ -1,0 +1,249 @@
+.pack-home-home { color: #122d40; font-family: 'Segoe UI', Arial, Helvetica, sans-serif; }
+.pack-home-frame { width: min(1160px, 83.2%); margin-inline: auto; }
+.pack-home-wide { width: min(1280px, 91.6%); margin-inline: auto; }
+.pack-home-eyebrow { display: flex; align-items: center; gap: 24px; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; line-height: 1.6; margin: 0 0 16px; color: #627381; }
+.pack-home-eyebrow:after { content: ''; height: 1px; width: 46px; background: currentColor; opacity: .8; }
+.pack-home-home h2 { font-size: clamp(29px, 2.7vw, 38px); line-height: 1.15; letter-spacing: -1.1px; font-weight: 600; margin: 0; }
+.pack-home-button { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; gap: 20px; min-height: 42px; padding: 12px 18px; border: 1px solid transparent; border-radius: 2px; font-size: 11px; font-weight: 600; line-height: 1.3; transition: background .2s, border-color .2s; white-space: nowrap; }
+.pack-home-button svg { width: 18px; height: 18px; flex-shrink: 0; }
+.pack-home-lightButton { background: white; color: #10324d; border-color: white; }
+.pack-home-lightButton:hover { background: #e8eff4; border-color: #e8eff4; }
+.pack-home-outlineButton { border-color: #91a1af; color: #13344d; background: transparent; }
+.pack-home-outlineButton:hover { background: #e8edf1; border-color: #13344d; }
+.pack-home-hero { position: relative; display: flex; align-items: center; min-height: clamp(480px, 36.5vw, 580px); overflow: hidden; background: #0b202e; color: white; }
+.pack-home-heroMedia { position: absolute; inset: 0; }
+.pack-home-heroImage { object-fit: cover; object-position: 65% 50%; transform: translateX(-5%) scale(1.2); transform-origin: left center; }
+.pack-home-heroShade { position: absolute; inset: 0; background: linear-gradient(90deg, #031722de 0%, #051823a8 30%, #091d2840 52%, #091d2800 78%); }
+.pack-home-heroContent { position: relative; z-index: 1; padding-block: 70px; }
+.pack-home-heroContent .pack-home-eyebrow { color: #eff5f8; font-size: 11px; letter-spacing: 1.8px; margin-bottom: 15px; }
+.pack-home-heroContent h1 { margin: 0; font-size: clamp(48px, 4.1vw, 64px); line-height: 1.035; letter-spacing: -1.8px; font-weight: 600; max-width: 600px; }
+.pack-home-heroContent h1 span { display: block; }
+.pack-home-heroDescription { max-width: 475px; font-size: 14px; line-height: 1.65; margin: 22px 0 26px; color: #f0f3f5; }
+.pack-home-heroActions { display: flex; gap: 36px; align-items: center; }
+.pack-home-heroActions .pack-home-button { min-height: 43px; font-size: 12px; padding-inline: 20px; }
+.pack-home-secondaryLink { display: inline-flex; align-items: center; gap: 12px; font-size: 12px; font-weight: 600; color: white; }
+.pack-home-secondaryLink svg { width: 16px; transition: translate .2s; }
+.pack-home-secondaryLink:hover svg { translate: 3px 0; }
+.pack-home-solutions { padding: 40px 0 30px; background: white; }
+.pack-home-sectionHeading { display: grid; grid-template-columns: 1.4fr 1fr auto; align-items: center; gap: 32px; margin-bottom: 24px; }
+.pack-home-sectionHeading .pack-home-eyebrow { margin-bottom: 13px; }
+.pack-home-sectionDescription { font-size: 12px; line-height: 1.65; color: #687884; margin: 26px 0 0; max-width: 360px; }
+.pack-home-sectionHeading > .pack-home-button { margin-top: 25px; }
+.pack-home-solutionGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.pack-home-solutionCard { min-width: 0; }
+.pack-home-photoLink { display: block; width: 100%; position: relative; aspect-ratio: 1.5; min-height: 210px; overflow: hidden; background: #152c3e; border-radius: 1px; }
+.pack-home-photoLink > img { object-fit: cover; object-position: center; transition: transform .6s ease; }
+.pack-home-photoLink:hover > img { transform: scale(1.035); }
+.pack-home-cardShade { position: absolute; inset: 0; background: linear-gradient(180deg, #03121b00 0%, #03121b15 28%, #03121b8c 58%, #020f19f2 100%); }
+.pack-home-solutionCaption { position: absolute; inset: auto 40px 18px 20px; color: white; }
+.pack-home-solutionCaption h3 { font-size: 18px; font-weight: 600; letter-spacing: -.3px; line-height: 1.2; max-width: 195px; margin: 0 0 9px; }
+.pack-home-solutionCaption p { font-size: 11px; line-height: 1.45; color: #f0f3f5; margin: 0; max-width: 210px; }
+.pack-home-cardArrow { position: absolute; right: 19px; bottom: 19px; color: white; width: 17px; transition: translate .2s; }
+.pack-home-photoLink:hover .pack-home-cardArrow { translate: 3px 0; }
+.pack-home-industries { position: relative; overflow: hidden; background: #102c3f; color: white; }
+.pack-home-industryImage { object-fit: cover; object-position: 50% 45%; }
+.pack-home-industryShade { position: absolute; inset: 0; background: linear-gradient(90deg, #092335f5 0%, #092335da 50%, #0d293beb 100%); }
+.pack-home-industryContent { position: relative; display: grid; grid-template-columns: 1.4fr 1fr auto; align-items: center; gap: 34px; padding-block: 36px; }
+.pack-home-industryContent .pack-home-eyebrow { color: #e1eaf0; margin-bottom: 14px; }
+.pack-home-industryContent h2 { font-size: clamp(28px, 2.65vw, 38px); }
+.pack-home-industryContent > p { margin: 26px 0 0; font-size: 12px; line-height: 1.65; max-width: 370px; color: #f0f3f5; }
+.pack-home-transparentButton { background: transparent; border-color: #c7d7e2a6; color: white; margin-top: 25px; }
+.pack-home-transparentButton:hover { background: #ffffff12; border-color: white; }
+.pack-home-catalogs { padding: 36px 0 64px; background: #f7f5f2; }
+.pack-home-catalogGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.pack-home-catalogCard { min-width: 0; }
+.pack-home-catalogLink { display: block; }
+.pack-home-catalogImage { position: relative; aspect-ratio: 1.68; overflow: hidden; background: #d8dedf; border-radius: 1px; }
+.pack-home-catalogImage img { object-fit: cover; transition: transform .6s; }
+.pack-home-catalogLink:hover .pack-home-catalogImage img { transform: scale(1.03); }
+.pack-home-catalogCaption { display: flex; justify-content: space-between; gap: 18px; padding-top: 20px; }
+.pack-home-catalogCaption h3 { font-size: 23px; font-weight: 600; letter-spacing: -.45px; margin: 0 0 7px; }
+.pack-home-catalogCaption p { color: #657582; font-size: 12px; line-height: 1.6; margin: 0; }
+.pack-home-catalogCaption svg { margin-top: 5px; flex-shrink: 0; color: #274d68; width: 18px; transition: translate .2s; }
+.pack-home-catalogLink:hover .pack-home-catalogCaption svg { translate: 3px 0; }
+.pack-home-catalogPending { display: flex; gap: 7px; align-items: center; font-size: 10px; line-height: 1.6; color: #627482; margin: 16px 0 0; }
+.pack-home-catalogPending > span { width: 5px; height: 5px; border-radius: 50%; background: #8094a1; }
+.pack-home-faq { background: white; padding-block: 76px; }
+.pack-home-faqGrid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 90px; }
+.pack-home-faqIntro { font-size: 13px; color: #687884; line-height: 1.8; margin: 22px 0 0; max-width: 280px; }
+.pack-home-faqList { border-top: 1px solid #ccd6dd; }
+.pack-home-faqItem { border-bottom: 1px solid #dce3e8; }
+.pack-home-faqItem summary { cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 24px 0; list-style: none; }
+.pack-home-faqItem summary::-webkit-details-marker { display: none; }
+.pack-home-faqItem summary::marker { content: ''; }
+.pack-home-faqItem summary:focus-visible { outline: 2px solid #527e95; outline-offset: 5px; }
+.pack-home-faqItem summary h3 { font-size: 15px; font-weight: 500; line-height: 1.5; margin: 0; }
+.pack-home-faqSymbol { position: relative; width: 16px; height: 16px; flex-shrink: 0; color: #476377; }
+.pack-home-faqSymbol:before, .pack-home-faqSymbol:after { content: ''; position: absolute; background: currentColor; }
+.pack-home-faqSymbol:before { height: 1px; width: 14px; top: 7px; left: 1px; }
+.pack-home-faqSymbol:after { width: 1px; height: 14px; left: 7px; top: 1px; }
+.pack-home-faqItem[open] .pack-home-faqSymbol:after { display: none; }
+.pack-home-faqAnswer { padding: 0 36px 24px 0; }
+.pack-home-faqAnswer p { font-size: 13px; line-height: 1.8; color: #607482; margin: 0 0 16px; }
+.pack-home-faqAnswer a { display: inline-flex; align-items: center; gap: 14px; font-size: 11px; font-weight: 600; }
+.pack-home-faqAnswer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.pack-home-faqAnswer a svg { width: 16px; }
+.pack-home-finalCta { background: #0b2c46; color: white; padding-block: 56px; }
+.pack-home-ctaContent { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+.pack-home-ctaContent .pack-home-eyebrow { color: #b9cddc; }
+.pack-home-ctaContent h2 { font-size: clamp(30px, 2.8vw, 40px); }
+.pack-home-ctaContent p:last-child { color: #c1d0da; font-size: 13px; line-height: 1.8; margin: 15px 0 0; }
+.pack-home-ctaContent .pack-home-button { min-width: 160px; }
+@media (min-width: 961px) { .pack-home-heroContent { animation: reveal .6s ease-out both; } }
+@keyframes reveal { from { opacity: 0; translate: 0 8px; } to { opacity: 1; translate: 0 0; } }
+@media (max-width: 1150px) {
+  .pack-home-heroImage { transform: none; object-position: 60% 50%; }
+  .pack-home-frame { width: calc(100% - 64px); }
+  .pack-home-wide { width: calc(100% - 48px); }
+  .pack-home-sectionHeading { gap: 24px; grid-template-columns: 1.3fr 1fr; }
+  .pack-home-sectionHeading > .pack-home-button { justify-self: start; margin-top: 0; grid-column: 2; }
+  .pack-home-sectionHeading > div { grid-row: 1 / 3; }
+  .pack-home-sectionDescription { margin-top: 0; }
+  .pack-home-industryContent { grid-template-columns: 1.2fr 1fr; gap: 22px 35px; }
+  .pack-home-industryContent > div { grid-row: 1 / 3; }
+  .pack-home-industryContent > p { margin: 0; }
+  .pack-home-transparentButton { justify-self: start; margin: 0; grid-column: 2; }
+  .pack-home-faqGrid { gap: 55px; }
+}
+@media (max-width: 1000px) {
+  .pack-home-solutionGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .pack-home-photoLink { aspect-ratio: 1.65; min-height: 225px; }
+  .pack-home-solutionCaption { bottom: 24px; left: 24px; }
+  .pack-home-solutionCaption h3 { max-width: 230px; font-size: 21px; }
+  .pack-home-solutionCaption p { max-width: 270px; font-size: 12px; }
+  .pack-home-cardArrow { right: 24px; bottom: 24px; }
+}
+@media (max-width: 760px) {
+  .pack-home-frame, .pack-home-wide { width: calc(100% - 40px); }
+  .pack-home-home h2 { font-size: 31px; letter-spacing: -.8px; }
+  .pack-home-hero { display: block; min-height: 0; }
+  .pack-home-heroMedia { position: relative; height: 270px; }
+  .pack-home-heroImage { object-position: 68% 50%; transform: none; }
+  .pack-home-heroShade { background: linear-gradient(180deg, #0b202e00 25%, #0b202e22 65%, #0b202e 100%); }
+  .pack-home-heroContent { padding: 14px 0 42px; }
+  .pack-home-heroContent .pack-home-eyebrow { font-size: 9px; letter-spacing: 1.3px; gap: 15px; margin-bottom: 17px; }
+  .pack-home-heroContent .pack-home-eyebrow:after { width: 24px; }
+  .pack-home-heroContent h1 { font-size: clamp(38px, 7vw, 52px); line-height: 1.05; letter-spacing: -1.2px; }
+  .pack-home-heroDescription { font-size: 14px; max-width: 460px; margin: 20px 0 25px; }
+  .pack-home-heroActions { gap: 22px; flex-wrap: wrap; }
+  .pack-home-heroActions .pack-home-button { font-size: 11px; padding: 13px 16px; gap: 15px; }
+  .pack-home-secondaryLink { font-size: 11px; }
+  .pack-home-solutions { padding: 36px 0; }
+  .pack-home-sectionHeading { grid-template-columns: 1fr; gap: 18px; margin-bottom: 26px; }
+  .pack-home-sectionHeading > div { grid-row: auto; }
+  .pack-home-sectionHeading > .pack-home-button { grid-column: auto; }
+  .pack-home-sectionDescription { max-width: 520px; font-size: 13px; margin: 0; }
+  .pack-home-eyebrow { font-size: 9px; margin-bottom: 15px; }
+  .pack-home-industryContent { grid-template-columns: 1fr; gap: 22px; padding-block: 40px; }
+  .pack-home-industryContent > div { grid-row: auto; }
+  .pack-home-industryContent > p { font-size: 13px; max-width: 520px; }
+  .pack-home-transparentButton { grid-column: auto; }
+  .pack-home-industryShade { background: #082438df; }
+  .pack-home-catalogs { padding: 36px 0 44px; }
+  .pack-home-catalogGrid { gap: 26px; }
+  .pack-home-catalogCaption h3 { font-size: 20px; }
+  .pack-home-faq { padding-block: 50px; }
+  .pack-home-faqGrid { grid-template-columns: 1fr; gap: 32px; }
+  .pack-home-faqGrid h2 br { display: none; }
+  .pack-home-faqIntro { max-width: 400px; margin-top: 18px; }
+  .pack-home-faqItem summary { padding-block: 22px; gap: 20px; }
+  .pack-home-faqItem summary h3 { font-size: 14px; }
+  .pack-home-faqAnswer { padding-right: 15px; }
+  .pack-home-finalCta { padding-block: 42px; }
+  .pack-home-ctaContent { flex-direction: column; align-items: flex-start; gap: 26px; }
+  .pack-home-ctaContent .pack-home-button { min-width: 145px; }
+}
+@media (max-width: 700px) { .pack-home-catalogGrid { grid-template-columns: 1fr; } .pack-home-catalogImage { aspect-ratio: 1.75; } .pack-home-catalogCaption h3 { font-size: 23px; } }
+@media (max-width: 560px) { .pack-home-solutionGrid { grid-template-columns: 1fr; gap: 16px; } .pack-home-photoLink { min-height: 235px; aspect-ratio: 1.55; } .pack-home-solutionCaption h3 { font-size: 22px; } .pack-home-heroMedia { height: 245px; } }
+@media (max-width: 360px) { .pack-home-heroMedia { height: 215px; } .pack-home-heroContent h1 { font-size: 36px; } .pack-home-heroActions { gap: 22px; } .pack-home-heroContent .pack-home-eyebrow { font-size: 8px; gap: 10px; } }
+@media (prefers-reduced-motion: reduce) { .pack-home-heroContent { animation: none; } .pack-home-button, .pack-home-secondaryLink svg, .pack-home-photoLink img, .pack-home-cardArrow, .pack-home-catalogImage img, .pack-home-catalogCaption svg { transition: none; } }
+/* Refinement: typography, finite entry sequences and native disclosures. */
+.pack-home-home { font-family: var(--font-body), Arial, sans-serif; }
+.pack-home-home h1, .pack-home-home h2, .pack-home-home h3 { font-family: var(--font-heading), Arial, sans-serif; font-weight: 650; }
+.pack-home-home h2 { letter-spacing: -.045em; line-height: 1.18; }
+.pack-home-heroContent { animation: none; }
+.pack-home-heroContent h1 { font-weight: 650; letter-spacing: -.045em; line-height: 1.09; }
+.pack-home-heroContent h1 > span { overflow: hidden; padding-bottom: .08em; margin-bottom: -.08em; }
+.pack-home-heroContent h1 > span > span { animation: pack-line-enter .75s cubic-bezier(.22,1,.36,1) both; }
+.pack-home-heroContent h1 > span:nth-child(1) > span { animation-delay: .12s; }
+.pack-home-heroContent h1 > span:nth-child(2) > span { animation-delay: .22s; }
+.pack-home-heroContent h1 > span:nth-child(3) > span { animation-delay: .32s; }
+.pack-home-heroContent .pack-home-eyebrow { animation: pack-fade-enter .6s ease-out both; }
+.pack-home-heroDescription { animation: pack-fade-enter .65s .38s both; }
+.pack-home-heroActions > :first-child { animation: pack-fade-enter .6s .46s both; }
+.pack-home-heroActions > :last-child { animation: pack-fade-enter .6s .55s both; }
+.pack-home-heroImage { animation: pack-hero-zoom 1.8s cubic-bezier(.22,1,.36,1) both; }
+.pack-home-scroll { position: absolute; bottom: 18px; right: 8.4%; width: 44px; height: 44px; display: grid; place-items: center; border: 1px solid #ffffff5c; border-radius: 50%; color: white; background: #09233538; animation: pack-fade-enter .7s .65s both; transition: background .25s, transform .25s; }
+.pack-home-scroll:hover { background: #ffffff25; transform: translateY(2px); }
+.pack-home-button, .pack-home-secondaryLink { min-height: 46px; border-radius: 6px; font-size: 12px; font-weight: 600; transition: background .25s, border-color .25s, transform .25s, box-shadow .25s; }
+.pack-home-button svg, .pack-home-secondaryLink svg { transition: transform .25s; }
+.pack-home-button:hover { transform: translateY(-2px); box-shadow: 0 6px 16px #102c3f12; }
+.pack-home-button:hover svg, .pack-home-secondaryLink:hover svg { transform: translateX(3px); translate: none; }
+.pack-home-button:active, .pack-home-secondaryLink:active { transform: translateY(0); box-shadow: none; }
+.pack-home-secondaryLink { padding: 11px 0; border: 1px solid transparent; }
+.pack-home-secondaryLink:hover { color: #d8e8f2; }
+.pack-home-home a:focus-visible { outline: 2px solid #5e9ec0; outline-offset: 5px; }
+.pack-home-button:disabled, .pack-home-button[aria-disabled='true'] { opacity: .5; cursor: not-allowed; transform: none; box-shadow: none; }
+.pack-home-sectionDescription, .pack-home-industryContent > p { font-size: 13px; line-height: 1.75; }
+.pack-home-solutionCaption p { font-size: 12px; line-height: 1.5; }
+.pack-home-faqItem { interpolate-size: allow-keywords; }
+.pack-home-faqItem::details-content { height: 0; overflow: clip; opacity: 0; transition: height .32s ease, opacity .25s ease, content-visibility .32s allow-discrete; }
+.pack-home-faqItem[open]::details-content { height: auto; opacity: 1; }
+.pack-home-faqItem summary { transition: color .2s; padding-block: 25px; }
+.pack-home-faqItem summary:hover { color: #39718f; }
+.pack-home-faqItem summary h3 { font-family: var(--font-body), Arial, sans-serif; font-weight: 600; font-size: 16px; }
+.pack-home-faqSymbol { width: 24px; height: 24px; }
+.pack-home-faqSymbol:before { top: 11px; left: 5px; }
+.pack-home-faqSymbol:after { left: 11px; top: 5px; transition: transform .25s; }
+.pack-home-faqItem[open] .pack-home-faqSymbol:after { display: block; transform: rotate(90deg); }
+.pack-home-faqAnswer p { font-size: 14px; line-height: 1.8; }
+.pack-home-faqAnswer a { min-height: 44px; font-size: 12px; }
+@keyframes pack-line-enter { from { transform: translateY(110%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@keyframes pack-fade-enter { from { opacity: 0; translate: 0 8px; } to { opacity: 1; translate: 0 0; } }
+@keyframes pack-hero-zoom { from { transform: translateX(-5%) scale(1.25); } to { transform: translateX(-5%) scale(1.2); } }
+@media (max-width: 1150px) { .pack-home-heroImage { animation-name: pack-hero-zoom-small; } }
+@keyframes pack-hero-zoom-small { from { transform: scale(1.045); } to { transform: scale(1); } }
+@media (max-width: 760px) { .pack-home-scroll { bottom: 14px; right: 20px; width: 36px; height: 36px; } .pack-home-heroContent { padding-bottom: 66px; } .pack-home-home h2 { letter-spacing: -.04em; } .pack-home-faqItem summary h3 { font-size: 15px; } }
+@media (prefers-reduced-motion: reduce) { .pack-home-home *, .pack-home-home *:after, .pack-home-home *::details-content { animation: none !important; transition: none !important; } }
+
+#soluciones { scroll-margin-top: 16px; }
+.pack-home-faqDisclosure > h3 { margin: 0; }
+.pack-home-faqQuestion { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 24px; text-align: left; border: 0; padding: 25px 0; background: transparent; color: inherit; cursor: pointer; font-family: var(--font-body),Arial,sans-serif; font-size: 16px; font-weight: 600; line-height: 1.5; transition: color .25s; }
+.pack-home-faqQuestion:hover { color: #39718f; }
+.pack-home-faqQuestion:focus-visible { outline: 2px solid #527e95; outline-offset: 5px; }
+.pack-home-faqPanel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .32s cubic-bezier(.22,1,.36,1); }
+.pack-home-faqPanel > div { overflow: hidden; min-height: 0; }
+.pack-home-faqDisclosure .pack-home-faqAnswer { opacity: 0; transform: translateY(-6px); transition: opacity .25s, transform .3s; }
+.pack-home-faqOpen .pack-home-faqPanel { grid-template-rows: 1fr; }
+.pack-home-faqOpen .pack-home-faqAnswer { opacity: 1; transform: translateY(0); }
+.pack-home-faqOpen .pack-home-faqSymbol:after { transform: rotate(90deg); }
+.pack-home-button:active, .pack-home-secondaryLink:active { transform: scale(.98); }
+.pack-home-secondaryLink { position: relative; }
+.pack-home-secondaryLink:after { content: ''; position: absolute; bottom: 6px; left: 0; width: calc(100% - 28px); height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s; }
+.pack-home-secondaryLink:hover:after { transform: scaleX(1); }
+#solutions-title { font-size: clamp(32px,2.9vw,42px); font-weight: 700; letter-spacing: -.045em; }
+.pack-home-heroImage { animation-duration: 1.5s; }
+@keyframes pack-hero-zoom { from { transform: translateX(-5%) scale(1.26); } to { transform: translateX(-5%) scale(1.2); } }
+@media (max-width: 760px) { #solutions-title { font-size: 31px; } .pack-home-faqQuestion { font-size: 15px; } }
+@media (prefers-reduced-motion: reduce) { .pack-home-faqPanel { transition: none; } }
+/* Editorial FAQ, isolated from the approved sections. */
+.pack-home-faq { background: #edf3f6; padding-block: 80px; }
+.pack-home-faqGrid { grid-template-columns: .9fr 1.5fr; gap: 80px; align-items: start; }
+.pack-home-faqGrid h2 { font-size: clamp(36px,3.5vw,50px); line-height: 1.1; font-weight: 700; letter-spacing: -.045em; }
+.pack-home-faqIntro { font-size: 14px; color: #526b7b; max-width: 290px; }
+.pack-home-faqList { border: 0; display: grid; gap: 14px; }
+.pack-home-faqDisclosure { background: #fff; border: 1px solid #dbe5eb; border-radius: 12px; padding-inline: 24px; transition: border-color .25s, background .25s; }
+.pack-home-faqQuestion { gap: 22px; padding-block: 24px; min-height: 80px; color: #153248; }
+.pack-home-faqSymbol { width: 36px; height: 36px; border-radius: 50%; background: #edf3f6; border: 1px solid #e1e9ee; color: #365d77; transition: background .25s, color .25s, transform .25s; }
+.pack-home-faqSymbol:before { left: 10px; top: 16px; }
+.pack-home-faqSymbol:after { left: 16px; top: 10px; }
+.pack-home-faqOpen { border-color: #9fb8c8; background: #fcfdfe; }
+.pack-home-faqOpen .pack-home-faqSymbol { background: #123c56; border-color: #123c56; color: #fff; }
+.pack-home-faqDisclosure:focus-within { border-color: #729ab2; }
+.pack-home-faqQuestion:focus-visible { outline: 2px solid #397697; outline-offset: 4px; border-radius: 6px; }
+.pack-home-faqAnswer { padding: 0 0 22px; }
+.pack-home-faqAnswer p { color: #526b7b; }
+@media (hover: hover) and (pointer: fine) { .pack-home-faqDisclosure:hover { border-color: #adc3d1; } .pack-home-faqQuestion:hover .pack-home-faqSymbol { transform: scale(1.05); } }
+@media (max-width: 1150px) { .pack-home-faqGrid { gap: 48px; } }
+@media (max-width: 760px) { .pack-home-faq { padding-block: 52px; } .pack-home-faqGrid { grid-template-columns: 1fr; gap: 30px; } .pack-home-faqGrid h2 { font-size: 36px; } .pack-home-faqIntro { max-width: 400px; } .pack-home-faqDisclosure { padding-inline: 18px; border-radius: 10px; } .pack-home-faqQuestion { padding-block: 20px; gap: 16px; font-size: 15px; } }
+

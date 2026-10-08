@@ -1,0 +1,30 @@
+/* Shared input feedback: no hover dependency and no navigation delay. */
+:is(.pack-cta,.pack-home-button,.pack-home-secondaryLink,.pack-header-contact,.pack-header-mobileContact,.pack-home-faqQuestion,.pack-footer-bottom a,.pack-home-faqAnswer a) { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+:is(.pack-cta,.pack-home-button,.pack-home-secondaryLink,.pack-header-contact,.pack-header-mobileContact,.pack-footer-bottom a,.pack-home-faqAnswer a):focus-visible { outline: 2px solid #689ebc; outline-offset: 5px; }
+:is(.pack-home-secondaryLink,.pack-home-faqAnswer a,.pack-footer-bottom a) { min-height: 44px; }
+@media (hover: none), (pointer: coarse) {
+ body :is(.pack-home-button:hover, .pack-cta:hover, .pack-header-contact:hover, .pack-header-mobileContact:hover) { transform: none; box-shadow: none; }
+ body :is(.pack-home-lightButton:hover, .pack-footer-cta:hover, .pack-header-contact:hover, .pack-header-navigation .pack-header-mobileContact:hover) { background: #fff; color: #10324d; }
+ body :is(.pack-home-outlineButton:hover) { background: transparent; border-color: #91a1af; }
+ body :is(.pack-home-transparentButton:hover) { background: transparent; border-color: #c7d7e2a6; }
+ body :is(.pack-home-secondaryLink:hover) { color: white; }
+ body :is(.pack-home-secondaryLink:hover:after) { transform: scaleX(0); }
+ body :is(.pack-home-faqQuestion:hover) { color: #153248; }
+ body :is(.pack-home-faqAnswer a:hover) { text-decoration: none; }
+ body :is(:is(.pack-home-button,.pack-cta,.pack-home-secondaryLink,.pack-header-contact,.pack-header-mobileContact):hover svg) { transform: none; translate: none; }
+ body :is(.pack-footer-bottom a:hover span) { transform: none; }
+}
+body :is(:is(.pack-cta,.pack-home-button,.pack-home-secondaryLink,.pack-header-contact,.pack-header-navigation .pack-header-mobileContact):active) { transform: scale(.97); box-shadow: none; transition-duration: 100ms; }
+body :is(:is(.pack-cta,.pack-home-button,.pack-home-secondaryLink,.pack-header-contact,.pack-header-mobileContact):active svg) { transform: translateX(3px); translate: none; }
+body :is(:is(.pack-home-lightButton,.pack-footer-cta,.pack-header-contact,.pack-header-navigation .pack-header-mobileContact):active) { background: #dce9f0; color: #10324d; }
+body :is(.pack-home-outlineButton:active) { background: #dce9f0; border-color: #527e95; }
+body :is(.pack-home-transparentButton:active) { background: #ffffff20; }
+body :is(.pack-home-secondaryLink:active) { color: #b8d9eb; }
+body :is(.pack-home-faqQuestion:active) { color: #315f7c; }
+body :is(.pack-home-faqQuestion:active .pack-home-faqSymbol) { transform: scale(.9); background: #cbdde8; color: #123c56; }
+body :is(:is(.pack-home-faqAnswer a,.pack-footer-bottom a):active) { opacity: .75; }
+@media (prefers-reduced-motion: reduce) {
+ body :is(:is(.pack-cta,.pack-home-button,.pack-home-secondaryLink,.pack-header-contact,.pack-header-mobileContact):active) { transform: none; }
+ body :is(:is(.pack-cta,.pack-home-button,.pack-home-secondaryLink,.pack-header-contact,.pack-header-mobileContact):active svg, .pack-home-faqQuestion:active .pack-home-faqSymbol) { transform: none; }
+ .pack-home-faqDisclosure,.pack-home-faqSymbol { transition: none; }
+}

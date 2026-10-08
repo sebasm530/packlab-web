@@ -1,0 +1,80 @@
+.pack-about { color: #153248; font-family: var(--font-body),Arial,sans-serif; }
+.pack-about-frame { width: min(1160px,83.2%); margin-inline: auto; }
+.pack-about h1,.pack-about h2,.pack-about h3 { font-family: var(--font-heading),Arial,sans-serif; font-weight: 650; margin: 0; }
+.pack-about h2 { font-size: clamp(32px,3.15vw,46px); letter-spacing: -.045em; line-height: 1.16; }
+.pack-about-eyebrow { font-size: 10px; line-height: 1.6; letter-spacing: .17em; font-weight: 600; color: #5b7586; margin: 0 0 18px; display: flex; align-items: center; gap: 20px; }
+.pack-about-eyebrow:after { content: ''; height: 1px; width: 42px; background: currentColor; opacity: .65; }
+.pack-about-hero { position: relative; overflow: hidden; background: #0b202e; color: white; min-height: clamp(520px,43vw,650px); display: flex; align-items: center; }
+.pack-about-heroImage { object-fit: cover; object-position: 62% 50%; animation: pack-about-zoom 1.5s cubic-bezier(.22,1,.36,1) both; }
+.pack-about-heroShade { position: absolute; inset: 0; background: linear-gradient(90deg,#081e2eed 0%,#081e2ebe 37%,#081e2e66 66%,#081e2e25 100%); }
+.pack-about-heroContent { position: relative; padding-block: 56px 72px; }
+.pack-about-breadcrumb { display: flex; gap: 12px; align-items: center; font-size: 11px; color: #c5d5df; margin-bottom: 36px; }
+.pack-about-breadcrumb a { min-height: 44px; display: inline-flex; align-items: center; }
+.pack-about-hero .pack-about-eyebrow { color: #d9e6ef; animation: pack-about-fade .65s both; }
+.pack-about h1 { font-size: clamp(40px,4.1vw,60px); line-height: 1.12; letter-spacing: -.045em; max-width: 730px; }
+.pack-about h1 > span { display: block; overflow: hidden; padding-bottom: .08em; margin-bottom: -.08em; }
+.pack-about h1 > span > span { display: block; animation: pack-about-line .8s cubic-bezier(.22,1,.36,1) both; }
+.pack-about h1 > span:nth-child(2) > span { animation-delay: .12s; }
+.pack-about h1 > span:nth-child(3) > span { animation-delay: .24s; }
+.pack-about-heroDescription { max-width: 490px; font-size: 15px; line-height: 1.8; margin: 26px 0 0; color: #e0e9ef; animation: pack-about-fade .7s .35s both; }
+.pack-about-illustration { position: absolute; bottom: 16px; right: 24px; font-size: 10px; color: #e5edf3; background: #0b202e80; border-radius: 3px; padding: 5px 8px; }
+.pack-about-section { padding-block: 88px; }
+.pack-about-intro { display: grid; grid-template-columns: .95fr 1.15fr; gap: 76px; align-items: center; }
+.pack-about-copy { color: #5a7282; font-size: 15px; line-height: 1.85; max-width: 475px; margin: 26px 0 0; }
+.pack-about-video { position: relative; aspect-ratio: 16/9; border-radius: 12px; overflow: hidden; background: #0d2c42; }
+.pack-about-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.pack-about-videoCover { display: block; position: absolute; inset: 0; width: 100%; height: 100%; background: linear-gradient(130deg,#153d56,#0a2234); border: 0; color: #fff; padding: 28px; text-align: left; cursor: pointer; overflow: hidden; }
+.pack-about-videoCover:before { content: ''; position: absolute; width: 190px; height: 190px; border: 1px solid #9ebed538; right: -26px; top: -40px; transform: rotate(35deg); box-shadow: 0 0 0 28px #9ebed508,0 0 0 56px #9ebed508; }
+.pack-about-videoLabel { display: block; position: relative; font-size: 9px; font-weight: 600; letter-spacing: .16em; color: #afc9d9; }
+.pack-about-videoTitle { position: absolute; left: 28px; bottom: 52px; font-family: var(--font-heading),Arial,sans-serif; font-size: clamp(25px,2.7vw,38px); line-height: 1.16; letter-spacing: -.04em; font-weight: 600; }
+.pack-about-play { position: absolute; top: 50%; right: 12%; transform: translateY(-50%); width: 66px; height: 66px; display: grid; place-items: center; border: 1px solid #b2ceddcc; border-radius: 50%; background: #ffffff0c; transition: background .25s, scale .25s; }
+.pack-about-play svg { margin-left: 3px; }
+.pack-about-videoHint { position: absolute; bottom: 28px; left: 28px; color: #b4ccd9; font-size: 9px; letter-spacing: .14em; }
+.pack-about-videoNote { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; color: #627988; font-size: 11px; line-height: 1.7; margin: 12px 0 0; }
+.pack-about-videoNote a { display: inline-flex; min-height: 44px; align-items: center; margin-top: -12px; color: #284e68; }
+.pack-about-purpose { background: #f4f7f9; }
+.pack-about-sectionHeading { margin-bottom: 38px; }
+.pack-about-purposeGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.pack-about-purposeCard { border-radius: 14px; padding: 42px; }
+.pack-about-mission { background: #0d2d44; color: #fff; }
+.pack-about-vision { background: #e4edf2; color: #14344a; }
+.pack-about-purposeCard > svg { margin-bottom: 35px; }
+.pack-about-cardLabel { display: block; font-size: 9px; font-weight: 600; letter-spacing: .16em; opacity: .75; margin-bottom: 12px; }
+.pack-about-purposeCard h3 { font-size: 35px; letter-spacing: -.04em; }
+.pack-about-purposeCard p { font-size: 16px; line-height: 1.85; margin: 23px 0 0; }
+.pack-about-source { color: #60798a; font-size: 11px; line-height: 1.8; margin: 22px 0 0; }
+.pack-about-source a { text-decoration: underline; text-underline-offset: 3px; }
+.pack-about-approach { display: grid; grid-template-columns: 1.2fr .85fr; gap: 76px; align-items: center; }
+.pack-about-approach figure { margin: 0; }
+.pack-about-approachImage { position: relative; aspect-ratio: 1.25; overflow: hidden; border-radius: 10px; }
+.pack-about-approachImage img { object-fit: cover; object-position: 72% 50%; }
+.pack-about-approach figcaption { font-size: 10px; line-height: 1.7; color: #647b8a; margin-top: 12px; max-width: 450px; }
+.pack-about-editorialLine { display: block; width: 70px; height: 2px; background: #7296ad; margin-top: 32px; }
+.pack-about-capabilities { background: #edf3f6; }
+.pack-about-workHeading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 36px; }
+.pack-about-workHeading > p { color: #607789; font-size: 14px; line-height: 1.75; max-width: 300px; margin: 0; }
+.pack-about-capabilityGrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.pack-about-capabilityGrid article { padding: 30px; border: 1px solid #dbe6ed; border-radius: 10px; background: #fff; }
+.pack-about-capabilityTop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 34px; color: #527a92; }
+.pack-about-capabilityTop > span { font-size: 11px; }
+.pack-about-capabilityGrid h3 { font-size: 21px; line-height: 1.3; letter-spacing: -.035em; }
+.pack-about-capabilityGrid p { font-size: 14px; color: #607789; line-height: 1.8; margin: 16px 0 0; }
+.pack-about-close { background: #fff; padding-block: 62px; }
+.pack-about-close > div { display: flex; justify-content: space-between; align-items: center; gap: 36px; }
+.pack-about-button { background: #10344f; color: #fff; }
+.pack-about-button svg { transition: transform .25s; }
+.pack-about a:focus-visible,.pack-about button:focus-visible,.pack-about iframe:focus-visible { outline: 2px solid #72a6c4; outline-offset: 5px; }
+.pack-about-videoCover:focus-visible { outline-offset: -6px; }
+@media (hover:hover) and (pointer:fine) { .pack-about-button:hover { background: #23516f; } .pack-about-videoCover:hover .pack-about-play { background: #ffffff20; scale: 1.07; } }
+.pack-about-button:active { background: #23516f; }
+.pack-about-videoCover:active .pack-about-play { scale: .94; background: #ffffff25; }
+@keyframes pack-about-zoom { from { transform: scale(1.045); } to { transform: scale(1); } }
+@keyframes pack-about-line { from { transform: translateY(110%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@keyframes pack-about-fade { from { opacity: 0; translate: 0 8px; } to { opacity: 1; translate: 0 0; } }
+@media (max-width:1150px) { .pack-about-frame { width: calc(100% - 64px); } .pack-about-intro,.pack-about-approach { gap: 42px; } .pack-about-purposeCard { padding: 32px; } .pack-about-capabilityGrid { gap: 16px; } .pack-about-capabilityGrid article { padding: 24px; } }
+@media (max-width:760px) { .pack-about-frame { width: calc(100% - 40px); } .pack-about-hero { min-height: 510px; } .pack-about-heroContent { padding-block: 30px 65px; } .pack-about-breadcrumb { margin-bottom: 22px; } .pack-about h1 { font-size: clamp(34px,7vw,48px); } .pack-about-heroImage { object-position: 72% 50%; } .pack-about-heroShade { background: linear-gradient(90deg,#081e2eeb,#081e2ea8); } .pack-about-heroDescription { font-size: 14px; } .pack-about-illustration { font-size: 9px; right: 20px; } .pack-about-section { padding-block: 52px; } .pack-about-intro,.pack-about-approach { grid-template-columns: 1fr; gap: 32px; } .pack-about h2 { font-size: 33px; } .pack-about-purposeGrid { grid-template-columns: 1fr; gap: 18px; } .pack-about-purposeCard { padding: 30px 26px; } .pack-about-purposeCard p { font-size: 15px; } .pack-about-approach > div { order: -1; } .pack-about-approachImage { aspect-ratio: 1.4; } .pack-about-capabilityGrid { grid-template-columns: 1fr; } .pack-about-workHeading { display: block; } .pack-about-workHeading > p { margin-top: 22px; max-width: 420px; } .pack-about-capabilityTop { margin-bottom: 24px; } .pack-about-close { padding-block: 46px; } .pack-about-close > div { flex-direction: column; align-items: flex-start; gap: 26px; } .pack-about-copy { font-size: 14px; } }
+@media (max-width:360px) { .pack-about h1 { font-size: 30px; } .pack-about h2 { font-size: 30px; } .pack-about-videoCover { padding: 20px; } .pack-about-videoTitle { left: 20px; bottom: 40px; font-size: 25px; } .pack-about-videoHint { left: 20px; bottom: 20px; font-size: 8px; } .pack-about-videoLabel { font-size: 8px; } .pack-about-play { width: 48px; height: 48px; right: 8%; } }
+@media (prefers-reduced-motion:reduce) { .pack-about *, .pack-about *:before { animation: none !important; transition: none !important; } .pack-about-videoCover:hover .pack-about-play,.pack-about-videoCover:active .pack-about-play { scale: 1; } }
+/* Keep the cover label independent of the native button's content alignment. */
+.pack-about-videoLabel { position: absolute; top: 28px; left: 28px; }
+@media (max-width:360px) { .pack-about-videoLabel { top: 18px; left: 20px; } }
