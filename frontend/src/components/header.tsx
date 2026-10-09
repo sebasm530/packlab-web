@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { content } from '@/data/content';
-import { Brand } from './brand';
+import Image from 'next/image';
+import navbarLogo from '../../public/images/logo-packlab-navbar-blanco.png';
 import { Arrow } from './arrow';
 import './header.css';
 
@@ -30,7 +31,7 @@ export function Header() {
   }, [dropdown]);
   function stopHoverTimer() { if (hoverTimer.current) clearTimeout(hoverTimer.current); }
   function hoverMenu(group: Dropdown | null, entering: boolean, pointerType: string) {
-    if (!group || pointerType !== 'mouse' || window.innerWidth <= 960) return;
+    if (!group || pointerType !== 'mouse' || window.innerWidth <= 1280) return;
     stopHoverTimer();
     hoverTimer.current = setTimeout(() => setDropdown(entering ? group : null), entering ? 100 : 240);
   }
@@ -62,7 +63,7 @@ export function Header() {
       }
     }}>
       <div className="pack-header-inner">
-        <Link href="/" className="pack-header-logo" aria-label="Pack Lab, inicio" onClick={closeMenus}><Brand /></Link>
+        <Link href="/" className="pack-header-logo" aria-label="Pack Lab, inicio" onClick={closeMenus}><Image src={navbarLogo} alt="Pack Lab — Developing Packaging Technology" sizes="(max-width: 760px) 180px, 220px" loading="eager" className="pack-header-trialLogo" /></Link>
         <button ref={menuButton} type="button" className="pack-header-mobileToggle" aria-expanded={open} aria-controls="navigation" onClick={() => { setOpen(!open); setDropdown(null); }}>
           <span>{open ? 'Cerrar' : 'Menú'}</span><span className={`pack-header-menuIcon ${open ? 'pack-header-menuIconOpen' : ''}`} aria-hidden="true"><i /><i /></span>
         </button>
@@ -87,9 +88,9 @@ export function Header() {
               </div>
             );
           })}
-          <Link className="pack-header-mobileContact" href="/contacto" onClick={closeMenus}>Contactar <Arrow /></Link>
+          <Link className="pack-header-mobileContact" href="/contacto" onClick={closeMenus}>Hablemos de tu proyecto <Arrow /></Link>
         </nav>
-        <Link className="pack-header-contact" href="/contacto" onClick={closeMenus}>Contactar <Arrow /></Link>
+        <Link className="pack-header-contact" href="/contacto" onClick={closeMenus}>Hablemos de tu proyecto <Arrow /></Link>
       </div>
     </header>
   );
