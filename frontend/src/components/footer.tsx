@@ -14,7 +14,7 @@ export function Footer() {
       <div className="pack-footer-social"><p className="pack-footer-label">CONECTEMOS</p><div className="pack-footer-socialIcons">{socialLinks.map(item => {
         const icon = <Image src={`/icons/${item.icon}.svg`} width={20} height={20} alt="" />;
         return item.url ? <a key={item.name} href={item.url} className="pack-footer-socialButton" aria-label={item.name} target="_blank" rel="noopener noreferrer">{icon}</a> : <button key={item.name} type="button" className="pack-footer-socialButton" disabled aria-label={`${item.name}: enlace pendiente`} title={`${item.name}: enlace pendiente`}>{icon}</button>;
-      })}</div><p className="pack-footer-pending">Enlaces oficiales próximamente.</p></div>
+      })}</div></div>
     </div>
     <div className="pack-footer-bottom"><span>© {new Date().getFullYear()} Pack Lab · Prototipo corporativo</span><span>Propuesta digital por <b>Kibina</b></span><a href="#packlab-top">Volver arriba <span aria-hidden="true">↑</span></a></div>
   </div></footer>;
