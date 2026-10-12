@@ -1,23 +1,55 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { content } from '@/data/content';
-import { PageHero, pageMetadata } from '@/components/page-hero';
-import { CatalogArt } from '@/components/cards';
-import { ContactBanner } from '@/components/contact-banner';
+import { pageMetadata } from '@/components/page-hero';
+import { Arrow } from '@/components/arrow';
+import { catalogCategories } from '@/data/catalog-categories';
+import { catalogHero, catalogImages } from '@/data/catalog-images';
+import '../catalogs.css';
 
 type Props = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
-export function generateStaticParams() { return content.catalogs.map(({ slug }) => ({ slug })); }
+export function generateStaticParams() { return catalogCategories.map(({ slug }) => ({ slug })); }
+
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const catalog = content.catalogs.find(item => item.slug === slug);
-  if (!catalog) notFound();
-  return pageMetadata(`Catálogo ${catalog.title}`, `${catalog.summary} Catálogo PDF próximamente.`);
+  const category = catalogCategories.find(item => item.slug === slug);
+  if (!category) notFound();
+  return pageMetadata(`Catálogo ${category.title}`, `${category.description} PDF oficial pendiente de publicación.`);
 }
 
 export default async function CatalogDetailPage({ params }: Props) {
   const { slug } = await params;
-  const catalog = content.catalogs.find(item => item.slug === slug);
-  if (!catalog) notFound();
-  return <><PageHero title={catalog.title} eyebrow="CATÁLOGOS / CATEGORÍA" description={catalog.summary} parent={{ label: 'Catálogos', href: '/catalogos' }} /><section className="section container catalog-detail"><CatalogArt catalog={catalog} /><div><p className="eyebrow">CONTENIDO EN PREPARACIÓN</p><h2>Catálogo próximamente</h2><p className="muted">{catalog.description}</p><div className="catalog-status"><span aria-hidden="true">◇</span><div><h3>PDF aún no disponible</h3><p>No hay productos ni precios publicados en esta categoría.</p></div></div><Link className="inline-link" href="/catalogos">Volver a Catálogos <span aria-hidden="true">→</span></Link></div></section><section className="section solutions"><div className="container"><p className="eyebrow">EXPLORA OTRAS CATEGORÍAS</p><div className="related-links">{content.catalogs.filter(item => item.slug !== slug).map(item => <Link key={item.slug} href={`/catalogos/${item.slug}`}>{item.title}<span aria-hidden="true">↗</span></Link>)}</div></div></section><ContactBanner /></>;
+  const category = catalogCategories.find(item => item.slug === slug);
+  if (!category) notFound();
+
+  return <div className="pack-catalogs cat-detail">
+    <section className="cat-hero" aria-labelledby="catalog-detail-title">
+      <Image src={catalogHero} alt="" fill sizes="100vw" loading="eager" fetchPriority="high" className="cat-hero-image" />
+      <div className="cat-hero-shade" />
+      <div className="cat-frame cat-hero-content">
+        <nav className="cat-detail-breadcrumb" aria-label="Ruta de navegación">
+          <Link href="/">Inicio</Link><span aria-hidden="true">/</span><Link href="/catalogos">Catálogos</Link><span aria-hidden="true">/</span><span aria-current="page">{category.title}</span>
+        </nav>
+        <h1 id="catalog-detail-title">{category.title}</h1>
+        <p className="cat-hero-copy">{category.description}</p>
+      </div>
+    </section>
+    <section className="cat-section" aria-labelledby="catalog-availability-title">
+      <div className="cat-frame cat-detail-grid">
+        <div className="cat-card-image"><Image src={catalogImages[category.slug]} alt={`Presentación de la categoría ${category.title}`} fill sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1224px) calc((100vw - 112px) / 2), 556px" loading="lazy" /></div>
+        <div className="cat-detail-copy">
+          <h2 id="catalog-availability-title">Catálogo próximamente</h2>
+          <p>El PDF oficial de esta categoría está pendiente de publicación.</p>
+          <div className="cat-detail-status"><strong>PDF aún no disponible</strong><p>No hay productos ni precios publicados en esta categoría.</p></div>
+          <Link className="cat-detail-back" href="/catalogos">Volver a Catálogos <Arrow /></Link>
+        </div>
+      </div>
+    </section>
+    <section className="cat-section cat-detail-related" aria-labelledby="other-catalogs-title">
+      <div className="cat-frame"><h2 id="other-catalogs-title">Explorá otras categorías</h2><div className="cat-detail-links">
+        {catalogCategories.filter(item => item.slug !== slug).map(item => <Link key={item.slug} href={`/catalogos/${item.slug}`}>{item.title}<Arrow /></Link>)}
+      </div></div>
+    </section>
+  </div>;
 }

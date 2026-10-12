@@ -30,7 +30,7 @@ export const homeContent = {
     faq: [
       { question: '¿Qué soluciones de empaque ofrece Pack Lab?', answer: 'El sitio presenta cuatro servicios: Ingeniería de Embalaje, Gestión de Inventarios, Soluciones Sostenibles y Entregas Eficientes. Podés explorar el enfoque de cada uno en Soluciones.', href: '/soluciones', link: 'Explorar soluciones' },
       { question: '¿Puedo solicitar una cotización personalizada?', answer: 'La página Contacto está preparada para consultas sobre tu proyecto. Por ahora, el formulario es demostrativo: el envío de consultas y cotizaciones aún no está habilitado.', href: '/contacto', link: 'Ver Contacto' },
-      { question: '¿Dónde puedo consultar los catálogos?', answer: 'En Catálogos encontrarás las categorías Multinacionales, Pymes y Displays. Los PDF oficiales todavía están pendientes de publicación y se indican como «Catálogo próximamente».', href: '/catalogos', link: 'Explorar catálogos' },
+      { question: '¿Dónde puedo consultar los catálogos?', answer: 'En Catálogos encontrás las categorías Multinacionales, Pymes y Displays. Los PDF oficiales todavía están pendientes de publicación y se indican como «Catálogo próximamente».', href: '/catalogos', link: 'Explorar catálogos' },
       { question: '¿Cómo puedo contactar a Pack Lab?', answer: 'En Contacto podés consultar el estado de los canales y explorar el formulario. El correo, teléfono, ubicación y horario se publicarán cuando Pack Lab confirme sus datos oficiales.', href: '/contacto', link: 'Ir a Contacto' },
     ],
   },

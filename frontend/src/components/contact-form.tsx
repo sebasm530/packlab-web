@@ -16,16 +16,16 @@ function FormIcon({kind}:{kind:'user'|'building'|'message'|'info'|'send'}) {
 export function ContactForm() {
  return <form className="pc-form" aria-labelledby="form-title" aria-describedby="submission-notice" autoComplete="off" onSubmit={event=>event.preventDefault()}>
   <p className="pc-form-eyebrow">TU CONSULTA</p>
-  <h2 id="form-title">Cuéntanos sobre tu proyecto.</h2>
-  <p className="pc-form-description">Completa la información para que nuestro equipo pueda conocer más sobre tus necesidades.</p>
+  <h2 id="form-title">Contanos sobre tu proyecto.</h2>
+  <p className="pc-form-description">Explorá los campos de consulta en esta versión demostrativa.</p>
+  <p className="pc-notice" id="submission-notice"><FormIcon kind="info"/><span>Versión demostrativa: el envío de consultas estará disponible cuando se complete la integración del formulario</span></p>
   <div className="pc-fields">
    <div><label htmlFor="name">Nombre completo <span aria-hidden="true">*</span></label><div className="pc-input-wrap"><span className="pc-input-icon"><FormIcon kind="user"/></span><input id="name" name="name" required minLength={2} placeholder="Tu nombre" /></div></div>
    <div><label htmlFor="company">Empresa <small>(opcional)</small></label><div className="pc-input-wrap"><span className="pc-input-icon"><FormIcon kind="building"/></span><input id="company" name="company" placeholder="Nombre de tu empresa" /></div></div>
    <div><label htmlFor="email">Correo electrónico <span aria-hidden="true">*</span></label><div className="pc-input-wrap"><span className="pc-input-icon"><ContactIcon kind="email"/></span><input id="email" name="email" type="email" required placeholder="tu@empresa.com" /></div></div>
    <div><label htmlFor="phone">Teléfono <small>(opcional)</small></label><div className="pc-input-wrap"><span className="pc-input-icon"><ContactIcon kind="phone"/></span><input id="phone" name="phone" type="tel" placeholder="Número de contacto" /></div></div>
-   <div className="pc-full"><label htmlFor="message">Mensaje <span aria-hidden="true">*</span></label><div className="pc-input-wrap pc-message-wrap"><span className="pc-input-icon"><FormIcon kind="message"/></span><textarea id="message" name="message" required minLength={10} rows={5} placeholder="Describe el reto de empaque que quieres explorar." /></div></div>
+   <div className="pc-full"><label htmlFor="message">Mensaje <span aria-hidden="true">*</span></label><div className="pc-input-wrap pc-message-wrap"><span className="pc-input-icon"><FormIcon kind="message"/></span><textarea id="message" name="message" required minLength={10} rows={5} placeholder="Describí el reto de empaque que querés explorar." /></div></div>
   </div>
   <button className="pc-submit" type="submit" disabled aria-describedby="submission-notice"><FormIcon kind="send"/>Enviar consulta <Arrow /></button>
-  <p className="pc-notice" id="submission-notice"><FormIcon kind="info"/><span>Formulario pendiente de integración.</span></p>
  </form>;
 }

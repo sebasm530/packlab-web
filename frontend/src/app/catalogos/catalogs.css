@@ -78,3 +78,19 @@
 .cat-pdf-actions button:before { content:'↓'; display:inline-block; margin-right:10px; }
 @media (max-width:760px) { .cat-hero { min-height:400px; padding-block:40px; } .cat-hero h1 { font-size:39px; } .cat-hero-shade { background:linear-gradient(90deg,#061e2fed,#061e2fa6); } .cat-hero-copy { font-size:14px; } .cat-section { padding-block:32px 48px; } .cat-card-content > p { min-height:0; } }
 @media (max-width:360px) { .cat-hero h1 { font-size:35px; } }
+.cat-pdf-actions button,.cat-pdf-actions a { font-size:14px; min-height:44px; }
+/* Scoped detail styles reuse the approved catalog palette and photography. */
+.cat-detail-breadcrumb { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:22px; font-size:13px; color:#d5e3ed; }
+.cat-detail-breadcrumb a { display:inline-flex; align-items:center; min-height:44px; }
+.cat-detail-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+.cat-detail-grid .cat-card-image { border-radius:12px; }
+.cat-detail-copy > p { color:#587083; font-size:15px; line-height:1.85; margin:20px 0; }
+.cat-detail-status { padding:20px; border-radius:12px; background:#edf1f5; color:#34556e; font-size:15px; line-height:1.7; margin-bottom:20px; }
+.cat-detail-status p { font-size:14px; margin:8px 0 0; }
+.cat-detail-back { display:inline-flex; align-items:center; gap:12px; min-height:44px; font-size:14px; }
+.cat-detail .cat-detail-related { padding-top:0; }
+.cat-detail-related h2 { font-size:clamp(24px,2vw,30px); }
+.cat-detail-links { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:24px; }
+.cat-detail-links a { display:flex; align-items:center; justify-content:space-between; gap:12px; border-block:1px solid #dce6ec; padding-block:20px; min-height:44px; font-size:17px; }
+@media (hover:hover) and (pointer:fine) { .cat-detail-back:hover,.cat-detail-links a:hover,.cat-detail-breadcrumb a:hover { text-decoration:underline; text-underline-offset:4px; } }
+@media (max-width:760px) { .cat-detail-grid { grid-template-columns:1fr; gap:28px; } .cat-detail-links { grid-template-columns:1fr; gap:16px; } }

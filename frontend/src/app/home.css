@@ -61,7 +61,7 @@
 .pack-home-catalogCaption p { color: #657582; font-size: 12px; line-height: 1.6; margin: 0; }
 .pack-home-catalogCaption svg { margin-top: 5px; flex-shrink: 0; color: #274d68; width: 18px; transition: translate .2s; }
 .pack-home-catalogLink:hover .pack-home-catalogCaption svg { translate: 3px 0; }
-.pack-home-catalogPending { display: flex; gap: 7px; align-items: center; font-size: 10px; line-height: 1.6; color: #627482; margin: 16px 0 0; }
+.pack-home-catalogPending { display: flex; gap: 7px; align-items: center; font-size: 13px; line-height: 1.6; color: #536674; margin: 16px 0 0; }
 .pack-home-catalogPending > span { width: 5px; height: 5px; border-radius: 50%; background: #8094a1; }
 .pack-home-faq { background: white; padding-block: 76px; }
 .pack-home-faqGrid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 90px; }
@@ -203,7 +203,7 @@
 @keyframes pack-hero-zoom { from { transform: translateX(-5%) scale(1.25); } to { transform: translateX(-5%) scale(1.2); } }
 @media (max-width: 1150px) { .pack-home-heroImage { animation-name: pack-hero-zoom-small; } }
 @keyframes pack-hero-zoom-small { from { transform: scale(1.045); } to { transform: scale(1); } }
-@media (max-width: 760px) { .pack-home-scroll { bottom: 14px; right: 20px; width: 36px; height: 36px; } .pack-home-heroContent { padding-bottom: 66px; } .pack-home-home h2 { letter-spacing: -.04em; } .pack-home-faqItem summary h3 { font-size: 15px; } }
+@media (max-width: 760px) { .pack-home-scroll { bottom: 14px; right: 20px; width: 44px; height: 44px; } .pack-home-heroContent { padding-bottom: 66px; } .pack-home-home h2 { letter-spacing: -.04em; } .pack-home-faqItem summary h3 { font-size: 15px; } }
 @media (prefers-reduced-motion: reduce) { .pack-home-home *, .pack-home-home *:after, .pack-home-home *::details-content { animation: none !important; transition: none !important; } }
 
 #soluciones { scroll-margin-top: 16px; }
