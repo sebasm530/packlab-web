@@ -13,8 +13,9 @@
 .pack-footer-cta { color: #10324d; background: #fff; white-space: nowrap; }
 .pack-footer-cta:hover { background: #dfeaf0; }
 .pack-footer-columns { display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 64px; padding-block: 48px; }
-.pack-footer-brand > a { display: inline-flex; background: white; padding: 9px 14px; border-radius: 6px; }
-.pack-footer-brand .brand-logo { width: 178px; }
+.pack-footer-brand > a { display: inline-flex; background: transparent; padding: 0; border-radius: 0;}
+.pack-footer-brand .brand-logo { width: 178px; aspect-ratio: auto; overflow: visible; }
+.pack-footer-brand .brand-image { display: block; position: static; width: 100%; max-width: 100%; height: auto; left: auto; top: auto; object-fit: contain; }
 .pack-footer-brand p { font-size: 13px; line-height: 1.8; color: #bacdd9; margin: 22px 0 0; }
 .pack-footer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 28px; font-size: 13px; }
 .pack-footer-links a { width: fit-content; position: relative; padding-block: 5px; }

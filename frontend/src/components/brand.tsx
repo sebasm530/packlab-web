@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from '../../public/logopacklab.webp';
+import logo from '../../public/images/logo-packlab-navbar-blanco.png';
 
 export function Brand() {
   return (
